@@ -1,8 +1,10 @@
 import random
-hane=int(input("Parolanın kaç haneli olmasını istiyorsun?"))
+
+hane = int(input("Parolanın kaç haneli olmasını istiyorsun?"))
 karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 parola = ""
+
 for i in range(hane):
-    random.choice(karakterler)
-parola+=karakterler
-print(parola)
+    parola += random.choice(karakterler)
+
+print("Oluşturulan Parola:", parola)
